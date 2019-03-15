@@ -1,0 +1,36 @@
+
+@import '../../styles//variables.scss';
+.sidebar {
+  width: 30%;
+  height: 100%;
+}
+
+
+.usersContainer {
+  background-color: $background;
+  height: 100%;
+}
+
+.users {
+  padding: 15px;
+  color: white;
+  position: relative;
+  font-size: 0.8em;
+}
+
+.peopleIcon {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.dot {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: $success;
+  position: absolute;
+  left: 25px;
+  bottom: 15px;
+}

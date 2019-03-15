@@ -1,0 +1,57 @@
+@import '../../styles/variables.scss';
+
+.myContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.author {
+  font-size: 0.8em;
+  color: $grey;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.message {
+  width: 80%;
+  height: 100%;
+  border-radius: 15px;
+  padding: 15px;
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    height: 20px;
+    right: 20px;
+    position: absolute;
+    transform: rotate( 45deg );
+    width:  20px;
+  }
+}
+
+.myMessage {
+  background-color: $main;
+  color: $white;
+  box-shadow: 0px 0px 6px $grey;
+  &:after {
+      background-color: $main;
+      box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+  }
+}
+
+.notMy {
+  background-color: $lightGrey;
+  color: $black;
+  &:after {
+      background-color: $lightGrey;
+  }
+}
